@@ -6,16 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 <STYLE>
-    .hello::after{
-         content :"  read this";
-    } p{
-        display:inline;
+    * { 
+ margin:0;
+ padding:0px;
+ box-sizing:border-box;
     }
+    .menu-container{
+        display: flex;
+        justify-content: center;
+        color:#fff;
+        background-color: #5995DA;
+
+    padding:20px 0;
+    }
+    .menu{
+        border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+  display:flex;
+  justify-content: space-between;
+    }
+    .link{
+        display:flex;
+        justify-content:space-around;
+        
+        border: 1px solid #fff; 
+    }
+   .login{
+    margin-left:20px;
+   }
+   .header-container{
+    color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+
+   }
+   
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+align-items: center;
+align-items: stretch;
+}
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}
 </STYLE>
 </head>
 
 <body>
-<div class= "hello"><P  >THIS IS ME</P></div>
+    <div class="menu-container">  
+       <div class="menu">  
+            <div class="date">date</div>
+            <div class="link">   
+                <div class="signup">signup</div>
+                 <div class="login">login</div>
+            </div>
+          
+        </div>
+
+    </div>
+    <div class="header-container"> 
+     <div class="header">
+        <div class="subscribe">subscribe</div>
+         <div class="logo"><img src="images/images/awesome-logo.svg" alt=""></div>
+         <div class="social"><img src="images/images/social-icons.svg" alt=""></div>
+     </div>
+
     
+
+   </div>
+  
 </body>
 </html>
